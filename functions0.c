@@ -3,6 +3,7 @@
 int int_print_c(va_list f);
 int int_print_s(va_list f);
 int int_print_cs(char *s);
+
 /**
  * int_print_c - print char
  * @f: char to print
@@ -30,7 +31,7 @@ int int_print_s(va_list f)
 	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		putchar(s[i]);
+		_putchar(s[i]);
 	}
 	return (i);
 }
@@ -40,7 +41,6 @@ int int_print_s(va_list f)
  * Return: f
  */
 int int_print_cs(char *s)
-
 {
 	int i = 0;
 
